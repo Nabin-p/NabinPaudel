@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Nabin's personal portfolio — web developer, projects, skills and contact.">
 </head>
+
 <body>
     <!-- Main layout -->
     <header class="site-header">
@@ -30,56 +32,68 @@
             <div class="container hero-inner">
                 <div class="hero-text">
                     <h1>Hi, I'm Nabin</h1>
-                    <p class="lead">Web developer & software engineer building useful, accessible and fast experiences on the web.</p>
+                    <p class="lead">Web developer & software engineer building useful, accessible and fast experiences
+                        on the web.</p>
                     <p>
                         <a class="button button-primary" href="#projects">See my work</a>
                         <a class="button button-secondary" href="#contact">Get in touch</a>
                     </p>
                 </div>
-                
+
             </div>
         </section>
 
         <section id="about" class="section container">
             <h2>About Me</h2>
-            <p>Hello! I'm Nabin, a passionate developer with experience in web development and software engineering. I build web apps, APIs, and tools that help people solve real problems. I focus on accessibility, performance and maintainable code.</p>
+            <p>Motivated Software Engineering graduate with hands-on experience in full-stack development,
+                Linux environments, database systems, and version control using Git/GitHub. Strong
+                debugging, problem-solving, and coding capabilities developed through academic projects
+                and self-driven learning.</p>
         </section>
 
         <section id="projects" class="section container">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <article class="project-card">
-                    <h3>Project One</h3>
-                    <p>A web application that helps users track their tasks efficiently.</p>
-                    <p><a class="button" href="#" aria-label="Open Project One">View</a></p>
+                    <h3>EduManage</h3>
+                    <p>School Management System with attendance via Face ID</p>
+                    <p><button type="button" class="button view-btn" data-title="EduManage" data-description="
+                        EduManage is a school management system that supports student records, class scheduling,
+                         and biometric attendance via Face ID integration. It is built with secure role-based access for administrator, teacher, student, and librarian, and
+                          responsive UI. EduManage is built using PHP and Laravel framework and python is used for Face ID integration.MySql is used for database management.
+                        ">View Description</button></p>
                 </article>
                 <article class="project-card">
-                    <h3>Project Two</h3>
-                    <p>An e-commerce platform designed for small businesses to sell their products online.</p>
-                    <p><a class="button" href="#" aria-label="Open Project Two">View</a></p>
+                    <h3>ArenaPlay</h3>
+                    <p>Futsal booking system</p>
+                    <p><button type="button" class="button view-btn" data-title="ArenaPlay" data-description="
+                        ArenaPlay is a booking system for futsal arenas that supports slot reservations,
+                         and admin dashboards to manage bookings. Includes calendar sync and mail notifications.
+                         It has role based access for users and admins. It is built uising PHP and MySQL for database management.
+                         ">View Description</button></p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Three</h3>
-                    <p>A performance-focused static site generator and starter kit.</p>
-                    <p><a class="button" href="#" aria-label="Open Project Three">View</a></p>
-                </article>
+
             </div>
         </section>
 
         <section id="skills" class="section container">
             <h2>Skills</h2>
             <ul class="skills-list" aria-label="Skills list">
-                <li>HTML &amp; CSS</li>
-                <li>JavaScript / TypeScript</li>
-                <li>React / Vue</li>
-                <li>Node.js / Express</li>
-                <li>Databases (SQL / NoSQL)</li>
+                <li>HTML </li>
+                <li>CSS </li>
+                <li>PHP </li>
+                <li>Laravel </li>
+                <li>JavaScript </li>
+                <li>SQL </li>
+                <li>Python </li>
+                <li>AI/ML </li>
             </ul>
         </section>
 
         <section id="contact" class="section container">
             <h2>Contact</h2>
-            <p>If you'd like to get in touch, send a message using the form below or email me at <a href="mailto:nabin@example.com">nabin@example.com</a>.</p>
+            <p>If you'd like to get in touch, send a message using the form below or email me at <a
+                    href="mailto:paudelnabin11@gmail.com">paudelnabin11@gmail.com</a>.</p>
             <form id="contact-form" class="contact-form" novalidate>
                 <div class="form-row">
                     <label for="name">Name</label>
@@ -99,20 +113,33 @@
                 <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
             </form>
         </section>
+        <!-- Modal dialog for project descriptions -->
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+            <div class="modal-overlay" data-close="true"></div>
+            <div class="modal-panel" role="document">
+                <header class="modal-header">
+                    <h3 id="modal-title">Title</h3>
+                    <button id="modal-close" class="modal-close" aria-label="Close dialog">✕</button>
+                </header>
+                <div id="modal-body" class="modal-body"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container footer-inner">
-            <p>&copy; <span id="year">2024</span> Nabin — Built with care.</p>
+            <p>&copy; <span id="year">2024</span> Nabin </p>
             <p class="socials">
-                <a href="#" aria-label="GitHub">GitHub</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/nabin-p" aria-label="GitHub">GitHub</a> · <a
+                    href="https://linkedin.com/in/nabinpaudel10" aria-label="LinkedIn">LinkedIn</a>
             </p>
         </div>
     </footer>
 
     <script src="script.js" defer></script>
-    
 
-    
+
+
 </body>
+
 </html>
