@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Nabin's personal portfolio — web developer, projects, skills and contact.">
+</head>
+<body>
+    <!-- Main layout -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Nabin</a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle dark mode">🌓</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Hi, I'm Nabin</h1>
+                    <p class="lead">Web developer & software engineer building useful, accessible and fast experiences on the web.</p>
+                    <p>
+                        <a class="button button-primary" href="#projects">See my work</a>
+                        <a class="button button-secondary" href="#contact">Get in touch</a>
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Nabin, a passionate developer with experience in web development and software engineering. I build web apps, APIs, and tools that help people solve real problems. I focus on accessibility, performance and maintainable code.</p>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Project One</h3>
+                    <p>A web application that helps users track their tasks efficiently.</p>
+                    <p><a class="button" href="#" aria-label="Open Project One">View</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>Project Two</h3>
+                    <p>An e-commerce platform designed for small businesses to sell their products online.</p>
+                    <p><a class="button" href="#" aria-label="Open Project Two">View</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>Project Three</h3>
+                    <p>A performance-focused static site generator and starter kit.</p>
+                    <p><a class="button" href="#" aria-label="Open Project Three">View</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Skills</h2>
+            <ul class="skills-list" aria-label="Skills list">
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript / TypeScript</li>
+                <li>React / Vue</li>
+                <li>Node.js / Express</li>
+                <li>Databases (SQL / NoSQL)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, send a message using the form below or email me at <a href="mailto:nabin@example.com">nabin@example.com</a>.</p>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Your name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="button button-success">Send message</button>
+                </div>
+                <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2024</span> Nabin — Built with care.</p>
+            <p class="socials">
+                <a href="#" aria-label="GitHub">GitHub</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    
+
+    
+</body>
+</html>
